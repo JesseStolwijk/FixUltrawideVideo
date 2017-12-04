@@ -1,10 +1,10 @@
 {
     
       "manifest_version": 2,
-      "name": "Borderify",
+      "name": "UltrawideVideo",
       "version": "1.0",
     
-      "description": "Adds a red border to all webpages matching mozilla.org.",
+      "description": "Fix fullscreen ultrawide video playback.",
     
       "icons": {
         "48": "icons/border-48.png"
@@ -12,7 +12,7 @@
     
       "content_scripts": [
         {
-          "matches": ["*://*.youtube.com/watch?v=*"],
+          "matches": ["*://*.youtube.com/watch?v=*", "*://*.netflix.com/watch/*"],
           "js": ["script.js", "jquery-3.2.1.js"]
         }
       ]
